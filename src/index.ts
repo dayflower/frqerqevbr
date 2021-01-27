@@ -4,7 +4,7 @@ import path from 'path';
 
 const PORT = parseInt(process.env.PORT || '3000', 10);
 
-async function main() {
+function main() {
   const server = fastify({
     logger: true,
   });
@@ -24,10 +24,4 @@ async function main() {
   });
 }
 
-main()
-  .then(() => {
-    console.log('finished.');
-  })
-  .catch((e) => {
-    console.error(e);
-  });
+main();
