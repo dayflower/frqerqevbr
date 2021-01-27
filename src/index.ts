@@ -14,7 +14,7 @@ function main() {
     prefix: '/',
   });
 
-  server.listen(PORT, (err, address) => {
+  server.listen(PORT, '0.0.0.0', (err, address) => {
     if (err) {
       console.error(err);
       process.exit(1);
