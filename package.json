@@ -5,7 +5,8 @@
   "description": "frqerqevbr",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node src/index.ts",
+    "postinstall": "tsc",
     "dev": "ts-node-dev src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
